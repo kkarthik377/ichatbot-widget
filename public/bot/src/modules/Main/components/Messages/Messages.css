@@ -1,0 +1,78 @@
+
+div.messages {
+    padding: 0 10px;
+    font-size: 14px;
+    height: calc(100vh - 122px);
+}
+.messages {
+    overflow-y:auto;
+    flex: auto;
+}
+
+div.powered-by {
+    text-align: center;
+    padding: 20px;
+}
+div.powered-by a {
+    text-decoration: none;
+    border-bottom: 1px solid rgb(232, 232, 238);
+}
+div.powered-by a:hover,
+div.powered-by a:active,
+div.powered-by a:focus {
+    border-bottom-color: inherit;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-top: solid 1px rgb(232, 232, 238);
+    margin: 0 auto;
+}
+
+div.error {
+    color: #cc0000;
+    text-align: center;
+}
+div.error h3 {
+
+}
+
+div.error p {
+
+}
+
+.messages::-webkit-scrollbar {
+    min-width: 12px;
+    width: 12px;
+    max-width: 12px;
+    min-height: 12px;
+    height: 12px;
+    max-height: 12px;
+    background: #e5e5e5;
+    box-shadow: inset 0px 50px 0px #67C18E, inset 0px -52px 0px #67C18E;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border: none;
+    border-radius: 100px;
+    border: solid 3px #e5e5e5;
+    box-shadow: inset 0px 0px 3px #999;
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+    background: #b0b0b0;
+  box-shadow: inset 0px 0px 3px #888;
+}
+
+.messages::-webkit-scrollbar-thumb:active {
+    background: #aaa;
+  box-shadow: inset 0px 0px 3px #7f7f7f;
+}
+
+.messages::-webkit-scrollbar-button {
+    display: block;
+    height: 26px;
+}

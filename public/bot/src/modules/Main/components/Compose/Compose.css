@@ -1,0 +1,46 @@
+div.compose {
+    background-color: #fff;
+    border-top: 1px solid #e5e5f1;
+    padding: 10px 20px
+}
+div.container {
+    display: flex
+}
+input {
+    height: 40px;
+    margin: 0;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #2d3339;
+    letter-spacing: -.02em
+}
+::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0
+}
+::-webkit-input-placeholder {
+    color: #c8c8d2
+}
+:-moz-placeholder,
+::-moz-placeholder {
+    color: #c8c8d2;
+    opacity: 1
+}
+:-ms-input-placeholder {
+    color: #c8c8d2
+}
+button {
+    height: 40px;
+    margin: 0;
+    width: 40px;
+    padding: 10px;
+    background-color: transparent;
+    border: none
+}
+button svg {
+    width: 20px;
+    height: 20px
+}

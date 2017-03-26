@@ -1,0 +1,21 @@
+{
+  "name": "ichatbot-bot",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd public/bot; npm run start",
+    "build": "cd public/bot; npm run build",
+    "server": "cd public/bot; serve -s build --p 3000",
+    "prod": "npm run build; npm run server"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "~2.5.5",
+    "express": "~4.14.1",
+    "inferno-devtools": "^1.4.2",
+    "morgan": "~1.7.0",
+    "serve": "^5.1.1"
+  }
+}

@@ -1,0 +1,124 @@
+.markdown {
+}
+.markdown ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+.markdown ul li {
+    display: list-item;
+    padding: 3px 0;
+}
+.markdown :first-child {
+    margin-top: 0;
+}
+.markdown :last-child  {
+    margin-bottom: 0;
+}
+.emoji {
+    height: 18px;
+    width: 18px;
+    vertical-align: text-bottom;
+}
+
+div.bubble {
+    border-radius: 20px;
+}
+
+li {
+    margin: 20px 0;
+}
+
+li > div.timestamp {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+li.bot > div.timestamp {
+    text-align: left;
+    margin-left: 36px;
+}
+
+li.user > div.timestamp {
+    text-align: right;
+    margin-right: 10px;
+}
+
+li > div.main {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+}
+
+li > div.main > div.bubble {
+    display: inline-block;
+    padding: 10px 14px;
+}
+
+li > div.main > img.icon {
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+}
+
+/* Message from Bot */
+li.bot > div.main > div.bubble {
+    background-color: rgb(230, 230, 235);
+    color: rgb(45, 51, 57);
+    margin-right: auto;
+    margin-left: 0;
+}
+
+li.bot > div.main {
+    margin-right: 30px;
+}
+
+/* Message from User */
+li.user > div.main > div.bubble {
+    background-color: rgb(103, 193, 142);
+    color: #fff;
+}
+
+li.user > div.main {
+    margin-left: 30px;
+}
+
+li.user div.text {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+div.pending {
+
+}
+
+/* Choices */
+div.choices {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+div.choice {
+    border: solid 1px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px;
+    margin: 5px;
+}
+
+/* Image */
+div.image_container {
+    position: relative;
+    border: solid 1px rgb(229, 229, 241);
+    /*width: 100%;*/
+    z-index: 0;
+    padding: 0 !important;
+    overflow: hidden;
+}
+div.image_container > .image {
+    max-height: 300px;
+    display: block;
+    /*background-position: 50% 50%;*/
+    /*background-size: cover;*/
+    /*padding-bottom: 52%;*/
+    /*position: relative;*/
+}

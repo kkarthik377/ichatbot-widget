@@ -1,0 +1,49 @@
+@font-face { font-family: Raleway-Medium; src: url('../../../public/fonts/Raleway-Medium.ttf'); } 
+
+.lite {
+    color: rgb(170, 170, 180);
+}
+
+div#testing {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 5px;
+    font-size: 12px;
+    z-index: 10;
+}
+
+
+div#messenger {
+    background-color: rgb(249, 249, 251);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .04), 0 2px 32px rgba(0, 0, 0, .08);
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    letter-spacing: -0.02em;
+}
+
+div.fullscreen {
+    margin-left: 0 !important;
+    box-shadow: none !important;
+}
+
+.header {
+}
+
+.messages {
+    overflow-y: auto;
+    flex: auto;
+}
+
+.compose {
+}
+
+.click-me {
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    color: #6e9fa5 !important;
+    font-family: Raleway-Medium !important;
+}

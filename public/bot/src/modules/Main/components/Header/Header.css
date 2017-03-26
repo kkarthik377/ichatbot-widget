@@ -1,0 +1,30 @@
+div.header {
+    background-color: rgb(249, 249, 249);
+}
+div.title {
+    background-color: #FFF;
+    padding: 10px 20px;
+    display: flex;
+    border-bottom: solid 1px rgb(229, 229, 241);
+}
+div.title div.message {
+    flex: 4;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+}
+div.title button.close {
+    cursor: pointer;
+    flex: none;
+    width: 40px;
+    height: 40px;
+}
+div.title button.close svg {
+    display: block;
+}
+.close-x {
+    stroke: rgb(120, 120, 135);
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-width: 3;
+}
