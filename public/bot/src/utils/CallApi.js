@@ -1,5 +1,5 @@
 
-const API_URL = 'http://localhost:7000/api/v1';
+const API_URL = 'http://ec2-52-72-115-113.compute-1.amazonaws.com:7000/api/v1';
 
 export default function callApi(endpoint, method = 'get', body) {
     return fetch(`${API_URL}/${endpoint}`, {
