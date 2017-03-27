@@ -19,7 +19,7 @@ div#messenger {
     background-color: rgb(249, 249, 251);
     box-shadow: 0 1px 6px rgba(0, 0, 0, .04), 0 2px 32px rgba(0, 0, 0, .08);
     margin-left: 20px;
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     height: 100%;
     letter-spacing: -0.02em;

@@ -41,7 +41,7 @@ class Main extends Component {
             const botMsg = {
                 user: 'bot',
                 type: 'message',
-                text: data.output.text ? data.output.text : ''
+                text: (data.output && data.output.text) ? data.output.text : ''
             };
             this.setState({
                 messages:[...this.state.messages, botMsg],
@@ -54,27 +54,33 @@ class Main extends Component {
         this.setState({
             messages:[...this.state.messages],
             showWidget: !this.state.showWidget
-        })
+        });
     }
 
     render() {
+        let view = null;
+        if(!this.state.showWidget) {
+            view = (
+                <div id="image" className="" onClick={this.toggle} style="position: fixed; bottom:0; right: 0; cursor: pointer;">
+                   <img src="../../../images/bot.png" style="height:80px; width:80px;" />
+                   <p className="click-me">Click Me</p>
+               </div>
+            );
+        } else {
+            view =(
+                <div id="app" className="animated bounceInRight">
+                   <div id="messenger" className="fullscreen">
+                       <Header close={this.toggle} />
+                       <Messages messages={this.state.messages} />
+                       <Compose send={this.conversations} />
+                   </div>
+               </div>
+            );
+        }
         return (
             <div style={{ overflow: 'hidden' }}>
-            {
-                (!this.state.showWidget) ? 
-                <div id="image" className="" onClick={this.toggle} style={{ position: 'fixed', bottom:0, right: 0, cursor: 'pointer' }}>
-                    <img src="../../../images/bot.png" style={{ height:'80px' }} />
-                    <p className="click-me">Click Me</p>
-                </div> :
-                <div id="app" className={ this.state.showWidget ? "animated bounceInRight" : "animated bounceOutLeft"}>
-                    <div id="messenger" className="fullscreen">
-                        <Header close={this.toggle} />
-                        <Messages messages={this.state.messages} />
-                        <Compose send={this.conversations} />
-                    </div>
-                </div>
-            }
-            </div>
+           {view}
+           </div>
         );
     }
 }
