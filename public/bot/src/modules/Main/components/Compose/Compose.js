@@ -7,7 +7,7 @@ function Compose(props) {
     function sendMessage() {
         if(element.value !== "")
         {
-            props.send(element.value);
+            props.send(element.value, element);
             element.value = "";
         }
     }
@@ -19,7 +19,7 @@ function Compose(props) {
 	return (
         <div className="compose">
             <div className="container">
-                <input type="text" placeholder="Type your message..." className="" ref={(elem) => element = elem} onKeyPress={_handleKeyPress} />
+                <input type="text" placeholder="Type your message..." className="" disabled={props.isLoading} ref={(elem) => element= elem} onKeyPress={_handleKeyPress} />
                 <button type="button" onClick={sendMessage}>
                     <svg width="46px" height="34px" viewBox="0 0 46 34" version="1.1" xmlns="http://www.w3.org/2000/svg">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
