@@ -1,5 +1,4 @@
 import Component from 'inferno-component';
-import ReactDOM from 'react-dom';
 // import Promise from 'bluebird';
 
 import Header from './components/Header/Header';
