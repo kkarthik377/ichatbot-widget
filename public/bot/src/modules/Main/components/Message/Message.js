@@ -20,7 +20,7 @@ function Message(props) {
         break;
     case 'message':
         message = <div className="text bubble markdown" style={theme}>
-            <p>{props.message.text}</p>
+            <p dangerouslySetInnerHTML={{ __html: props.message.text }}></p>
         </div>
         break;
     case 'pending':

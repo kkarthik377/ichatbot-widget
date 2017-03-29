@@ -46,7 +46,7 @@ class Main extends Component {
                         titleBar: "Live Chat",
                         // startButton: "Start Chat",
                         welcomeText: "Welcome to Live Chatbot",
-                        badge: "Chat with us!",
+                        badge: "Click Here",
                         placeHolder: "Type Here...",
                         firstMessage: "Hi {{username}}, How can i help you?",
                         _id: "58db651d16b0d1229a0e3d66"
@@ -145,6 +145,8 @@ class Main extends Component {
         this.setState(Object.assign(this.state,{
             showWidget: !this.state.showWidget
         }));
+        var windowResize = this.state.showWidget ? "iframeMaximize" : "iframeMinimize";
+        window.parent.postMessage(windowResize, "*");
     }
 
     render() {
