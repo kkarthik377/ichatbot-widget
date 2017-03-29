@@ -51,7 +51,7 @@ div.error p {
     height: 12px;
     max-height: 12px;
     background: #e5e5e5;
-    box-shadow: inset 0px 50px 0px #67C18E, inset 0px -52px 0px #67C18E;
+    /*box-shadow: inset 0px 50px 0px #67C18E, inset 0px -52px 0px #67C18E;*/
 }
 
 .messages::-webkit-scrollbar-thumb {
@@ -73,6 +73,6 @@ div.error p {
 }
 
 .messages::-webkit-scrollbar-button {
-    display: block;
-    height: 26px;
+    /*display: block;
+    height: 26px;*/
 }

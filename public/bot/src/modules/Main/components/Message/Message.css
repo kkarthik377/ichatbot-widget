@@ -62,7 +62,6 @@ li > div.main > img.icon {
 
 /* Message from Bot */
 li.bot > div.main > div.bubble {
-    background-color: rgb(230, 230, 235);
     color: rgb(45, 51, 57);
     margin-right: auto;
     margin-left: 0;
@@ -74,7 +73,6 @@ li.bot > div.main {
 
 /* Message from User */
 li.user > div.main > div.bubble {
-    background-color: rgb(103, 193, 142);
     color: #fff;
 }
 
